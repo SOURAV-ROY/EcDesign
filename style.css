@@ -153,10 +153,25 @@ h4 {
     font-size: 14px;
 }
 
-.rating .fa{
+.rating .fa {
     color: #ff523b;
 }
 
-.col-4:hover{
+.col-4:hover {
     transform: translateY(-5px);
+}
+
+/*-------------Offer----------------------------*/
+.offer {
+    background: radial-gradient(lightgreen, lightgrey);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-img {
+    padding: 50px;
+}
+
+small {
+    color: #555555;
 }
