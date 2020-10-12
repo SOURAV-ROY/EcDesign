@@ -204,14 +204,33 @@ small {
     color: #ff523b;
 }
 
-.col-3 p{
+.col-3 p {
     font-size: 14px;
     margin: 12px 0;
     color: #777777;
 }
 
-.testimonial .col-3 h3{
+.testimonial .col-3 h3 {
     font-weight: 600;
     color: #555;
     font-size: 16px;
+}
+
+/*------Brands----------*/
+.brands {
+    margin: 100px auto;
+}
+
+.col-5 {
+    width: 160px;
+}
+
+.col-5 img {
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover {
+    filter: grayscale(0);
 }
