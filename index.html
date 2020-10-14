@@ -25,7 +25,7 @@
             </div>
 
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">About</a></li>
@@ -34,6 +34,7 @@
                 </ul>
             </nav>
             <a href="#"><img src="images/cart.png" width="30px" height="30px" alt=""></a>
+            <a href="#"><img src="images/menu.png" class="menu-icon" onClick="menuToggle()" alt=""></a>
 
         </div>
 
@@ -364,9 +365,24 @@
     </div>
 </div>
 
-<script src="script.js"></script>
+<!-------------------Js for toggle Menu------------------------>
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+
+    function menuToggle() {
+        if (MenuItems.style.maxHeight === "0px") {
+            MenuItems.style.maxHeight = "200px"
+        } else {
+            MenuItems.style.maxHeight = "0px"
+        }
+    }
+
+</script>
+
+<!--<script src="script.js"></script>-->
 <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!--<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>-->
 <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>-->
 </body>
 </html>
